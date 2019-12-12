@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>GOT Board Game</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="thegame.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+  <script src="thegame.js"></script>
+
+  
+</head>
+<body>
+
+                
+
+
+<div class="[ container ]"> 
+ 
+   
+<a href="Character-page.html" id="back"><i class="fas fa-long-arrow-alt-left"></i>Back</a> 
+
+<h1>Boardgame of thrones</h1>
+
+
+  <div class="row" id="boxes"> 
+         
+        <!--Dice Output-->
+        <div class="dicedisplay-box">
+        <h3 id="dicedisplay">Dice roll:</h3>
+        </div>
+        
+       <div class="[ col-sm-3 ]" id="player1">
+       <h3>Player 1</h3>
+       <i class="fas fa-dice" id="disablebtn1" onClick="theBoard.player1()"></i>
+       </div>
+
+        <div class="[ col-sm-3 ]" id="player2">
+       <h3>Player 2</h3>
+       <i class="fas fa-dice" id="disablebtn2" onClick="theBoard.player2()"></i>
+       </div>
+</div>
+
+  <div class="row" id="tiles">
+    
+ <div class="board">
+       <div class="[ col-sm-2 ] tile-25" id="blueTile">
+        <p>25.</p>
+       <span class="playerToken"></span>
+        </div>
+
+        <div class="[ col-sm-2 ] tile-26" id="redTile"> 
+       <p>26.</p>
+       <span class="playerToken"></span>
+        </div>
+
+        <div class="[ col-sm-2 ] tile-27" id="blueTile">
+       <p>27.</p>
+          <span class="playerToken"></span>
+        </div>
+
+        <div class="[ col-sm-2 ] tile-28" id="redTile"> <!--Trap-->
+        <p>28.</p>
+        <img src="Traps/whitewalker.svg" alt="Trap-whiteWalker" style="width:70%;"> 
+          <span class="playerToken"></span>
+        </div>
+
+        <div class="[ col-sm-2 ] tile-29" id="blueTile">
+        <p>29.</p>
+          <span class="playerToken"></span>
+        </div>
+
+        <div class="[ col-sm-2 ] tile-30" id="redTile">  <!--Last tile-->
+        <p>30.</p>
+        <img src="Traps/flag.webp" alt="Flag" style="width:80%;">  
+          <span class="playerToken"></span>
+        </div>
+
+        <div class="[ col-sm-2 ] tile-24" id="redTile">
+        <p>24.</p>
+          <span class="playerToken"></span>
+        </div>
+
+        <div class="[ col-sm-2 ] tile-23" id="blueTile">
+        <p>23.</p>
+          <span class="playerToken"></span>
+        </div>
+
+        <div class="[ col-sm-2 ] tile-22" id="redTile">
+        <p>22.</p>
+          <span class="playerToken"></span>
+        </div>
+
+        <div class="[ col-sm-2 ] tile-21" id="blueTile">
+        <p>21.</p>
+          <span class="playerToken"></span>
+        </div>
+
+        <div class="[ col-sm-2 ] tile-20" id="redTile"> <!--Trap-->
+        <p>20.</p>
+        <img src="/Traps/browndragon.svg" alt="Trap-brownDragon" style="width:70%;"> 
+          <span class="playerToken"></span>
+        </div>
+
+        <div class="[ col-sm-2 ] tile-19" id="blueTile">
+        <p>19.</p>
+          <span class="playerToken"></span>
+        </div>
+
+        <div class="[ col-sm-2 ] tile-13" id="blueTile"> 
+        <p>13.</p>
+          <span class="playerToken"></span>
+        </div>
+
+        <div class="[ col-sm-2 ] tile-14" id="redTile">
+        <p>14.</p>
+          <span class="playerToken"></span>
+        </div>
+
+        <div class="[ col-sm-2 ] tile-15" id="blueTile"> <!--Trap-->
+        <p>15.</p>
+        <img src="traps/icedragon.svg" alt="Trap-iceDragon" style="width:70%;">  
+          <span class="playerToken"></span>
+        </div>
+
+        <div class="[ col-sm-2 ] tile-16" id="redTile">
+        <p>16.</p>
+          <span class="playerToken"></span>
+        </div>
+
+        <div class="[ col-sm-2 ] tile-17" id="blueTile">
+        <p>17.</p>
+          <span class="playerToken"></span>
+        </div>
+
+        <div class="[ col-sm-2 ] tile-18" id="redTile">
+        <p>18.</p>
+          <span class="playerToken"></span>
+        </div>
+
+        <div class="[ col-sm-2 ] tile-12" id="redTile"> <!--Trap-->
+        <p>12.</p>
+        <img src="Traps/fire.svg" alt="Trap-Fire" style="width:70%;"> 
+          <span class="playerToken"></span>
+        </div>
+
+        <div class="[ col-sm-2 ] tile-11" id="blueTile"> 
+        <p>11.</p>
+        
+          <span class="playerToken"></span>
+        </div>
+
+        <div class="[ col-sm-2 ] tile-10" id="redTile">
+        <p>10.</p>
+          <span class="playerToken"></span>
+        </div>
+
+        <div class="[ col-sm-2 ] tile-9" id="blueTile">
+        <p>9.</p>
+          <span class="playerToken"></span>
+        </div>
+
+        <div class="[ col-sm-2 ] tile-8" id="redTile">
+        <p>8.</p>
+          <span class="playerToken"></span>
+        </div>
+
+        <div class="[ col-sm-2 ] tile-7" id="blueTile">
+        <p>7.</p>
+          <span class="playerToken"></span>
+        </div>
+
+        <div class="[ col-sm-2 ] tile-1" id="blueTile">
+        <p>1.</p>
+          <span class="playerToken"></span>
+        </div>
+
+        <div class="[ col-sm-2 ] tile-2" id="redTile">
+        <p>2.</p>
+          <span class="playerToken"></span>
+        </div>
+
+        <div class="[ col-sm-2 ] tile-3" id="blueTile">
+        <p>3.</p>
+          <span class="playerToken"></span>
+        </div>
+
+        <div class="[ col-sm-2 ] tile-4"id="redTile">
+        <p>4.</p>
+          <span class="playerToken"></span>
+        </div>
+
+        <div class="[ col-sm-2 ] tile-5" id="blueTile">  <!--Trap-->
+         <p>5.</p>
+          <img src="Traps/soldier.svg" alt="Trap-Soldier" style="width:70%;">       
+          <span class="playerToken"></span>
+        </div>
+        
+        <div class="[ col-sm-2 ] tile-6" id="redTile">
+        <p>6.</p>
+          <span class="playerToken"></span>
+        </div>
+
+      <!--Empty tiles-->
+        <div class="tile-31">
+          <span class="playerToken"></span>
+          </div>
+
+          <div class="tile-32">
+            <span class="playerToken"></span>
+            </div>
+
+            <div class="tile-33">
+              <span class="playerToken"></span>
+              </div>
+
+              <div class="tile-34">
+                <span class="playerToken"></span>
+                </div>
+                <div class="tile-35">
+                  <span class="playerToken"></span>
+                  </div>
+
+        
+           
+</div>
+</div>
+
+</div>
+
+  
+
+</body>
+</html>

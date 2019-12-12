@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>GOT Board Game</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="Character-page.css">
+  <script src="Character-page.js"></script>
+  
+</head>
+<body>
+
+    <video autoplay muted loop id="myVideo">
+        <source src="images/backgroundHome.mp4" type="video/mp4" alt="video">
+      </video>
+   
+<div class="[ container ]"> 
+
+ 
+<div class="[ col-sm-12 ]">
+<h1>Choose your hero:</h1>
+</div>
+
+
+  <div class="row">
+      
+    <div class="[ col-sm-2 ]" data-toggle="modal" data-target="#myModalAegon" id="card1">
+      <img src="Icons/aegon2x.png" alt="CharacterIcon-Aegon" style="width:100%;">
+       </div>
+
+    <div class="[ col-sm-2 ]" data-toggle="modal" data-target="#myModalArya" >
+          <img src="Icons/aryaX2.png" alt="CharacterIcon-Arya" style="width:100%;">
+         </div>
+        
+    <div class="[ col-sm-2 ]" data-toggle="modal" data-target="#myModalCersei">
+            <img src="Icons/cerseiX2.png" alt="CharacterIcon-Cersei" style="width:100%;">
+           </div>
+           
+           
+    <div class="[ col-sm-2 ]"  data-toggle="modal" data-target="#myModalDany">
+      <img src="Icons/daenerys2x.png" alt="CharacterIcon-Daenerys" style="width:100%;">
+    </div> 
+
+    <div class="[ col-sm-2 ]" data-toggle="modal" data-target="#myModalEddard">
+      <img src="Icons/eddardX2.png" alt="CharacterIcon-Eddard" style="width:100%;">
+    </div>
+
+
+    <div class="[ col-sm-2 ]" data-toggle="modal" data-target="#myModalJaime" id="card5">
+        <img src="Icons/jaimeX2.png" alt="CharacterIcon-Jaime" style="width:100%;">
+    </div>
+
+    
+    <div class="[ col-sm-2 ]" data-toggle="modal" data-target="#myModalJon" >  
+     <img src="Icons/jonX2.png" alt="CharacterIcon-Jon" style="width:100%;">
+     </div>
+    
+
+      
+    <div class="[ col-sm-2 ]" data-toggle="modal" data-target="#myModalStannis" >   
+     <img src="Icons/stannisX2.png" alt="CharacterIcon-Stannis" style="width:100%;">
+    </div>
+
+    <div class="[ col-sm-2 ]" data-toggle="modal" data-target="#myModalTheon"> 
+        <img src="Icons/theon2x.png" alt="CharacterIcon-Theon" style="width:100%;">
+       </div>
+
+    <div class="[ col-sm-2 ]" data-toggle="modal" data-target="#myModalTyrion">
+      <img src="Icons/tyrionx2.png" alt="CharacterIcon-Tyrion" style="width:100%;">
+     </div>
+   
+</div>
+
+
+  
+  <button  class="playthegame"><a href="thegame.html">Play the game!</a> </button>
+
+ 
+
+
+
+  
+
+</div>
+
+
+
+ <!-- Modal - Start - Aegon -->
+ <div id="myModalAegon" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-m">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h2 class="modal-title" id="aegonMod"></h2>
+      </div>
+      <div class="modal-body">
+          <img src="Icons/aegon2x.png" alt="CharacterIcon-Aegon" style="width:50%;">
+          <p id="aegonTitle"></p>
+          <p id="aegonBorn"></p>
+          <p id="aegonAlias"></p>
+      </div>
+   
+    </div>
+
+  </div>
+</div>  
+
+<!--Modal end-->
+
+
+
+
+   <!-- Modal - Start - Arya -->
+ <div id="myModalArya" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-m">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h2 class="modal-title" id="aryaMod"></h2>
+      </div>
+      <div class="modal-body">
+          <img src="Icons/aryaX2.png" alt="CharacterIcon-Arya" style="width:50%;">
+          <p id="aryaTitle"></p>
+          <p id="aryaBorn"></p>
+          <p id="aryaAlias"></p>
+      </div>
+   
+    </div>
+
+  </div>
+</div>  
+
+<!--Modal end-->
+
+
+ <!-- Modal - Start - Cersei -->
+ <div id="myModalCersei" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-m">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h2 class="modal-title" id="cerseiMod"></h2>
+      </div>
+      <div class="modal-body">
+          <img src="Icons/cerseiX2.png" alt="CharacterIcon-Cersei" style="width:50%;">
+          <p id="cerseiTitle"></p>
+          <p id="cerseiBorn"></p>
+          <p id="cerseiAlias"></p>
+      </div>
+   
+    </div>
+
+  </div>
+</div>  
+
+<!--Modal end-->
+
+
+   <!-- Modal - Start - Dany -->
+<div id="myModalDany" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-m">
+  
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h2 class="modal-title" id="danyMod"></h2>
+        </div>
+        <div class="modal-body">
+            <img src="Icons/daenerys2x.png" alt="CharacterIcon-Daenerys" style="width:50%;">
+            <p id="danyTitle"></p>
+            <p id="danyBorn"></p>
+            <p id="danyAlias"></p>
+        </div>
+     
+      </div>
+  
+    </div>
+  </div>  
+  
+  <!--Modal end-->
+
+   <!-- Modal - Start - Eddard -->
+ <div id="myModalEddard" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-m">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h2 class="modal-title" id="eddardMod"></h2>
+      </div>
+      <div class="modal-body">
+          <img src="Icons/eddardX2.png" alt="CharacterIcon-Eddard" style="width:50%;">
+          <p id="eddardTitle"></p>
+          <p id="eddardBorn"></p>
+          <p id="eddardAlias"></p>
+      </div>
+   
+    </div>
+
+  </div>
+</div>  
+
+<!--Modal end-->
+
+
+<!-- Modal - Start - Jaime -->
+<div id="myModalJaime" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-m">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h2 class="modal-title" id="jaimeMod"></h2>
+      </div>
+      <div class="modal-body">
+          <img src="Icons/jaimeX2.png" alt="CharacterIcon-Jaime" style="width:50%;">
+          <p id="jaimeTitle"></p>
+          <p id="jaimeBorn"></p>
+          <p id="jaimeAlias"></p>
+      </div>
+   
+    </div>
+
+  </div>
+</div>  
+
+<!--Modal end-->
+
+
+
+ <!-- Modal - Start - Jon -->
+ <div id="myModalJon" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-m">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h2 class="modal-title" id="jonMod"></h2>
+      </div>
+      <div class="modal-body">
+          <img src="Icons/jonX2.png" alt="CharacterIcon-Jon" style="width:50%;">
+        <p id="jonTitle"></p>
+        <p id="jonBorn"></p>
+        <p id="jonAlias"></p>
+      </div>
+   
+    </div>
+
+  </div>
+</div>  
+
+<!--Modal end-->
+
+
+   <!-- Modal - Start - Stannis -->
+<div id="myModalStannis" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-m">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h2 class="modal-title" id="stannisMod"></h2>
+      </div>
+      <div class="modal-body">
+          <img src="Icons/stannisX2.png" alt="CharacterIcon-Stannis" style="width:50%;">
+          <p id="stannisTitle"></p>
+          <p id="stannisBorn"></p>
+          <p id="stannisAlias"></p>
+      </div>
+   
+    </div>
+
+  </div>
+</div>  
+
+<!--Modal end-->
+
+
+ <!-- Modal - Start - Theon -->
+ <div id="myModalTheon" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-m">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h2 class="modal-title" id="theonMod"></h2>
+      </div>
+      <div class="modal-body">
+          <img src="Icons/theon2x.png" alt="CharacterIcon-Theon" style="width:50%;">
+          <p id="theonTitle"></p>
+          <p id="theonBorn"></p>
+          <p id="theonAlias"></p>
+      </div>
+   
+    </div>
+
+  </div>
+</div>  
+
+<!--Modal end-->
+ 
+
+
+<!-- Modal - Start - Tyrion -->
+<div id="myModalTyrion" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-m">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h2 class="modal-title" id="tyrionMod"></h2>
+      </div>
+      <div class="modal-body">
+          <img src="Icons/tyrionx2.png" alt="CharacterIcon-Tyrion" style="width:50%;">
+          <p id="tyrionTitle"></p>
+          <p id="tyrionBorn"></p>
+          <p id="tyrionAlias"></p>
+      </div>
+   
+    </div>
+
+  </div>
+</div>  
+
+<!--Modal end-->
+  
+
+  
+</body>
+</html>
